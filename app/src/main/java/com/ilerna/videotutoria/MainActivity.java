@@ -13,7 +13,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Toast para crear textos, se mete el contexto, funcion en este caso al crearse el activity y la duración del mensaje
-        Toast.makeText(this,"onCreate()",Toast.LENGTH_SHORT);
+        Toast.makeText(this,"onCreate()",Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    protected void onStart(){
+
+        Toast.makeText(this,"onStart()", Toast.LENGTH_SHORT).show();
+        super.onStart();
 
     }
 }
