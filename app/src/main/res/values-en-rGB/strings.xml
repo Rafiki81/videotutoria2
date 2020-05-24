@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">videotutoria</string>
+    <string name="app_name">OnlineClass</string>
     <string name="onCreate">Function OnCreate</string>
     <string name="onStart">Function OnStart</string>
     <string name="onResume">Function OnResume</string>

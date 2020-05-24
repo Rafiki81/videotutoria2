@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">videotutoria</string>
+    <string name="onCreate">Función OnCreate</string>
+    <string name="onStart">Función OnStart</string>
+    <string name="onResume">Función OnResume</string>
+</resources>
