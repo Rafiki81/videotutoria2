@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button apareceTexto;
     Button cambiaTexto;
+    TextView texto;
+
 
     //El onCreate se crea automaticamente
     @Override
@@ -21,8 +24,21 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this,getText(R.string.onCreate),Toast.LENGTH_SHORT).show();
         View apareceTexto = findViewById(R.id.apareceTexto);
         View cambiaTexto = findViewById(R.id.cambiaTexto);
+        texto = findViewById(R.id.textView);
 
+        apareceTexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getBaseContext(),getText(R.string.apareceTexto),Toast.LENGTH_SHORT).show();
+            }
+        });
 
+        cambiaTexto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                texto.setText("Has clickado el boton");
+            }
+        });
 
 
     }

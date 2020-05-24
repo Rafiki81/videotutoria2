@@ -4,4 +4,5 @@
     <string name="onCreate">Función OnCreate</string>
     <string name="onStart">Función OnStart</string>
     <string name="onResume">Función OnResume</string>
+    <string name="apareceTexto">Has pulsado un Boton</string>
 </resources>
