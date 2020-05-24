@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         View apareceTexto = findViewById(R.id.apareceTexto);
         View cambiaTexto = findViewById(R.id.cambiaTexto);
         texto = findViewById(R.id.textView);
+        texto.setText("No has clickado el boton");
 
         apareceTexto.setOnClickListener(new View.OnClickListener() {
             @Override
